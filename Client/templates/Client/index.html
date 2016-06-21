@@ -1,0 +1,37 @@
+{% load staticfiles %}
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Best Photo</title>
+    <link rel="stylesheet" href="{% static 'css/main.css' %}">
+    <script type="text/javascript" src="{% static 'js/lib/jquery-3.0.0.min.js' %}"></script>
+</head>
+<body>
+    <div id="menu" class="menuSlideTransition">
+       <a href="#" id="hoverMenuButton">≡</a>
+       <img src="{% static 'images/dog.jpg' %}" alt="" id="autorPhoto"/>
+       <h1>
+         photographer Dog
+       </h1>
+    </div>
+
+    <div id="content">
+        <div class="navigation">
+          <a href="#" id="leftArrow" class="navigationArrow">
+            <img src="{%static 'images\slyder\leftarrow.svg' %}"/>
+          </a>
+          <a href="#" id="rightArrow"  class="navigationArrow">
+            <img src="{%static 'images\slyder\rightarrow.svg' %}"/>
+          </a>
+        </div>
+        <div id="currentPhotoPage">
+            <img id="currentPhoto" src="" alt="" >
+            <article id="imageArticle">
+                <h1 id="currentTitle"></h1>
+                <p id="currentDiscription"></p>
+            </article>
+      </div>
+    </div>
+<script type="text/javascript" src="{% static 'js/main.js' %}"></script>
+</body>
+</html>

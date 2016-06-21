@@ -1,0 +1,47 @@
+html,body{
+    min-width: 100%;
+    min-height: 100%;
+    color: #EAE8E7;
+}
+
+a{
+  color: #6D7280;
+}
+
+#menu > h1{
+  margin: 20px;
+  font-size: 20px;
+}
+#menu{
+    background-color: #6D7280;;
+    width: 300px;
+    height: 100%;
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    left: -300;
+}
+
+#hoverMenuButton{
+    text-decoration: none;
+    float: right;
+    margin-right: -60px;
+    font-size: 55px;
+
+}
+
+.menuSlideTransition{
+    transition-property: left;
+    transition-duration: 1s;
+}
+
+#content{
+    height: 100%;
+    width: 100%;
+    background-image: url('../images/slyder/loading.gif');
+    background-color: black;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    z-index: 1;
+}
